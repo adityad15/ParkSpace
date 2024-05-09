@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- NETWORK PERMISSIONS -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- LOCATION PERMISSIONS -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1">
+
+        <activity
+            android:name=".admin_files.adminhistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin_files.upcomingbooking"
+            android:exported="false" />
+        <activity
+            android:name=".admin_files.AdminHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".admin_files.AdminRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".user_files.HistoryPage"
+            android:exported="false" />
+        <activity
+            android:name=".user_files.SlotBooking"
+            android:exported="false" />
+        <activity
+            android:name=".user_files.ParkSpaceDetails"
+            android:exported="false" />
+        <activity
+            android:name=".user_files.UserSupportPage"
+            android:exported="false" />
+        <activity
+            android:name=".user_files.UserAccInfo"
+            android:exported="false" />
+        <activity
+            android:name=".user_files.UserProfile"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".user_files.HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".UserSignup"
+            android:exported="false" />
+        <activity
+            android:name=".UserLogin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
